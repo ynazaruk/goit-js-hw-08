@@ -5,14 +5,22 @@ li {
 
 img {
   display: block;
-  max-width: 360px;
+  cursor: pointer;
 }
 
 .gallery {
-  width: 1440px;
+  margin: 0 auto;
+  max-width: 1440px;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 24px;
-  padding-left: 0;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  transition: transform 400ms ease;
+}
+.gallery-image:hover {
+  transform: scale(1.05);
 }
